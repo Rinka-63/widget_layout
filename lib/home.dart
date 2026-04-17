@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const ProfilePage());
+  runApp(const HomePage());
 }
 
-class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -46,7 +46,8 @@ class ProfilePage extends StatelessWidget {
 
               Text(
                 " Sering merasa jenuh dengan aplikasi to-do list yang membosankan? Cuma tumpukan teks tanpa makna? Saatnya beralih ke cara baru mengelola hari. Kami memperkenalkan The Journey, aplikasi produktivitas yang dirancang khusus untuk kamu yang ingin melihat setiap tugas sebagai langkah menuju pencapaian besar. ",
-                textAlign: TextAlign.center,
+                textAlign: TextAlign. justify,
+                style: TextStyle(fontSize: 19),
               ),
             ],
           ),
@@ -95,7 +96,7 @@ class ProfilePage extends StatelessWidget {
         const SizedBox(height: 10),
         const Text(
           "Text",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14),
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 19),
         ),
       ],
     );
